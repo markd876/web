@@ -1,0 +1,18 @@
+.img404{
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    img{
+        margin-bottom: 25px;
+    }
+    p{
+        color: $colorLetras;
+        font-size: 20px;
+    }
+    iframe{
+        margin-bottom: 25px;
+    }
+}

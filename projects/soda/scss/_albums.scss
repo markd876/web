@@ -1,0 +1,95 @@
+@mixin color ($colorFondoAlbum) {
+    background-color: $colorFondoAlbum;
+}
+
+.titulo__album{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    color: $colorTitulo;
+    font-size: 25px;
+}
+.albums__container{
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.album__container{
+    width: 600px;
+    height: 260px;
+}
+.album__container__1{
+    height: 100%;
+    position: relative;
+}
+.album__sodastereo{
+    position: relative;
+    padding: 30px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.album__sodastereo__1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+.album__content{
+    width: 100%;
+    height: 100%;
+}
+.album__content__1{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.album__content__titulo{
+    text-align: center;
+    margin-bottom: 10px;
+    color: $colorLetras;
+}
+.album__content__escuchar{
+    margin-top: 60px;
+}
+.album__content__anio{
+    color: $colorLetras;
+}
+.album_nadapersonal{
+    @include color(#E63387);
+}
+.album__nadapersonal{
+    @include color(#7E6731);
+}
+.album__languis{
+    @include color(#19833B);
+}
+.album__cancionAnimal{
+    @include color(#E87117);
+}
+.album__zona{
+    @include color(#F8F908);
+    .album__content__titulo{
+        color: #414141;
+    }
+    .album__content__anio{
+        color: #414141;
+    }
+}
+.album__suenoStereo{
+    @include color(#5D524F);
+}
+.album_elUltimoB{
+    @include color(#00A6CD);
+}
+.album_gira1{
+    @include color(#0D88B1);
+}

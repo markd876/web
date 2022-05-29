@@ -1,0 +1,39 @@
+.container__tienda{
+    width: 900px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.container__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 400px;
+    padding-top: 10px;
+    background-color: #1d3557;
+    border-radius: 5px;
+    margin: 5px;
+}
+.item__imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item__desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $colorLetras;
+}
+.item__desc__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

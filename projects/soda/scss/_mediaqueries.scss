@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1100px){
+    .albums__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .album__container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .album__sodastereo{
+        padding-right: 0;
+    }
+    .main__parrafo{
+        flex-direction: column;
+    }
+    .main__imagen_izquierda{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+    .main__imagen_derecha{
+        order: -1;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .container__tienda{
+        width: 100%;
+        flex-direction: column;
+    }
+    .container__item{
+        margin-bottom: 5px;
+    }
+    .item__desc__titulo{
+        font-size: 26px !important;
+    }
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    main{
+        height: auto;
+        min-height: auto;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .inicio{
+        a{
+            font-size: 65px;
+        }
+    }
+    nav ul{
+        padding-left: 0 !important;
+    }
+    .header__logo{
+        margin-left: auto;
+    }
+    .item__desc__titulo{
+        font-size: 20px !important;
+    }
+    .header__iconos{
+        margin: 0;
+    }
+    .inicio a{
+        font-size: 75px;
+    }
+    #timeline{
+        margin-top: 0px;
+    }
+    .galeria{
+        grid-template-columns: 1fr;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        a{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    .container__item{
+        height: 300px;
+    }
+}

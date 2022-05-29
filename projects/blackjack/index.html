@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+    <header class="header">Blackjack</header>
+
+    <div class="row mt-2">
+        <div class="col text-center">
+            
+            <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
+            <button id="btnPedir" class="btn btn-primary">Pedir carta</button>
+            <button id="btnDetener" class="btn btn-primary">Detener</button>
+            <div><h2>Apuesta: $ <small>0</small> </h2></div>
+            <div><h2>Dinero: $ <small>0</small> </h2></div>
+        </div>
+    </div>
+    <div class="apuesta">
+        <button id="mas5" class="btn btn-success">+5</button>
+        <button id="mas10" class="btn btn-success">+10</button>
+        <button id="mas20" class="btn btn-success">+20</button>
+        <button id="por2" class="btn btn-success">x2</button>
+        <button id="allin" class="btn btn-warning">ALL IN</button>
+    </div>
+    <div class="apuesta1">
+        <button id="menos5" class="btn btn-danger">-5</button>
+        <button id="menos10" class="btn btn-danger">-10</button>
+        <button id="menos20" class="btn btn-danger">-20</button>
+        <button id="entre2" class="btn btn-danger">/2</button>
+    </div>
+    <div class="apuesta2">
+        <button id="reiniciar" class="btn btn-primary">Reiniciar Apuesta</button>
+    </div>
+    <div class="row container">
+        <div class="col">
+            <h1>Jugador 1 - <small>0</small></h1>
+            <div id="jugador-cartas">
+                
+            </div>
+        </div>
+    </div>
+    <div class="row container mt-2">
+        <div class="col">
+            <h1>Computadora - <small>0</small></h1>
+            <div id="computadora-cartas">
+                <!--img class="carta" src="assets\cartas\2C.png" alt="carta"-->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script>
+    <script src="js\app-min.js"></script>
+</body>
+</html>

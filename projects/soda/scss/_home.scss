@@ -1,0 +1,55 @@
+@import "colores";
+main{
+    height: auto;
+    min-height: 810px;
+}
+.inicio{
+    padding-top: 80px;
+    width: 100%;
+    height: 800px;
+    a{
+        color: $colorLetras;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 100px;
+        font-style: italic;
+        margin-top: 10px;
+        span:hover{
+            color: $colorTitulo;
+        }
+    }
+    
+}
+#timeline{
+    margin-top: 100px;
+}
+.main__titulo{
+    text-align: left;
+    color: $colorTitulo;
+    font-weight: 900;
+}
+.main__parrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__parrafo__derecha{
+    width: 50%;
+    display: inline-block;
+    color: $colorLetras;
+}
+.main__parrafo_izquierda{
+    @extend .main__parrafo__derecha;
+}
+.main__imagen_izquierda{
+    width: 30%;
+    display: inline-block;
+    margin: 55px 250px 50px 50px;
+}
+.main__imagen_derecha{
+    @extend .main__imagen_izquierda;
+    margin: 55px 25px 50px 180px;
+}

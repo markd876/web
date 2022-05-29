@@ -1,0 +1,98 @@
+@font-face { font-family: Monument; src: url('MonumentExtended-Regular.otf'); }
+
+
+html {
+  scroll-behavior: smooth;
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header{
+    float: right;
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    top: 1%;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .nav{
+    float: right;
+    padding: 50px 90px;
+  }
+  .div{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100px;
+    width: 400px;
+    margin-bottom: 30px;
+  }
+  .textblack{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Monument;
+  }
+  .textblack a {
+    text-decoration: none;
+    color: white;
+  }
+  .projects{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  nav ul{
+    list-style: none;
+  }
+  nav ul li{
+    float: left;
+  }
+  nav ul li a{
+    font-family: Monument;
+    text-decoration: none;
+    margin: 25px;
+    color: white;
+  }
+
+.background {
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: absolute;
+    height: 200rem;
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+    margin:0px;
+  }
+ 
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
